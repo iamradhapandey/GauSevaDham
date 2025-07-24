@@ -6,6 +6,7 @@ import Program from "../components/Program"
 import Poster from "../components/Poster"
 import Donation from "../components/Donation"
 import Rigister from "../components/Rigister"
+import Footer from "../components/footer"
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       <Welcome />
       <Card />
       <Program />
-      <Poster />
+      {/* <Poster /> */}
       <Donation />
       <Rigister/>
     </div>

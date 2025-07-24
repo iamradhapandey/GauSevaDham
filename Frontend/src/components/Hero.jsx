@@ -21,8 +21,8 @@ export const Hero = () => {
 
   return (
     <div>
-      <section className="relative h-screen w-full overflow-hidden bg-[#a8247e] flex justify-center items-center">
-        <div className="relative w-[85vw] max-w-[1000px] h-[80vh] shadow-2xl overflow-hidden">
+      <section className="relative h-screen w-full overflow-hidden bg-white flex justify-center items-center">
+        <div className="relative w-[85vw] max-w-[1000px] mt-10 h-[80vh] shadow-2xl overflow-hidden">
           <AnimatePresence mode="sync">
             <motion.div
               key={currentImage}
@@ -34,7 +34,7 @@ export const Hero = () => {
             >
               <img
                 src={images[currentImage]}
-                alt={`Slide ${currentImage}`}
+                alt={'Slide ${currentImage}'}
                 className="w-full h-full object-cover "
               />
             </motion.div>

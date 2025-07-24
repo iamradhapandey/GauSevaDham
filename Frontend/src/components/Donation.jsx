@@ -1,12 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
     const Donation = () => {
         const [isChecked, setIsChecked] = useState(false); 
+        const navigate = useNavigate();
 
   return (
-    <section className="bg-[#fdf0e8] text-[#4b2c34] px-6 py-12 md:px-16 md:py-20">
+    <section className="bg-white text-[#4b2c34] px-6 py-12 md:px-16 md:py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* Left Section */}
         <div>
@@ -97,7 +99,7 @@ import { useState } from "react";
       <input
         type="checkbox"
         className="accent-[#dc4e4e] w-4 h-4 rounded mr-2"
-        defaultChecked
+        onChange={() => setIsChecked(!isChecked)}
       />
       I agree that my submitted data is being collected and stored.
     </label>
@@ -110,10 +112,11 @@ import { useState } from "react";
   <div className="mt-6 flex justify-center">
   <button
           disabled={!isChecked}
-          className={`px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 ${
+          onClick={() => navigate("/donate")}
+          className={`px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 cursor-pointer ${
             isChecked
-              ? "bg-[#d64341] text-white hover:bg-[#a63534] hover:text-white"
-              : "bg-red-300 text-[#674C57] cursor-not-allowed"
+              ? "bg-red-400 text-black hover:bg-red-400 hover:text-white"
+              : "bg-red-400 text-white cursor-not-allowed"
           }`}
         >
           Donate Now

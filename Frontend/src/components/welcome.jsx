@@ -2,7 +2,7 @@ import React from "react"
 
 export const welcome = () => {
   return (
-    <div className="flex flex-row justify-between py-20 space-y-6 bg-[#FFEFE2]">
+    <div className="flex flex-row justify-between py-20 space-y-6 bg-white">
       {/** Left Side */}
       <div className="w-[40vw] h-[50vh] flex flex-col justify-center px-6">
         <p className="text-lg  text-pink-500 mb-2">Welcome</p>

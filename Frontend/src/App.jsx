@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom"
 
 import About_DeviJi from "./pages/About_DeviJi";
-import  About_Mission from "./pages/About_Mission"
-import  About_Trust  from "./pages/About_Trust"
+import  About_Seva from "./pages/About_Seva"
+import About_Trust from "./pages/About_trust"
 import  Home  from "./pages/Home"
 import  Contact  from "./pages/Contact"
 import  Donate  from "./pages/Donate"
@@ -17,17 +17,22 @@ import  Video  from "./pages/Video"
 import  Bhajan  from "./pages/Bhajan"
 import { ToastContainer, toast } from 'react-toastify';
 import { Navbar } from "./components/Navbar"
-import  Footer  from "./components/Footer"
+import  Footer  from "./components/footer"
 
 export const App = () => {
   return (
     <div>
       <ToastContainer />
+      
+      <div className="min-h-screen flex flex-col">
       <Navbar />
+      <main className="flex-grow">
+
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about/devi-ji" element={<About_DeviJi />} />
-        <Route path="/about/mission" element={<About_Mission />} />
+        <Route path="/about/seva" element={<About_Seva />} />
         <Route path="/about/trust" element={<About_Trust />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
@@ -41,6 +46,10 @@ export const App = () => {
         <Route path="/bhajan" element={<Bhajan />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </main>
+      <Footer/>
+      </div>
+      
     </div>
   )
 }
