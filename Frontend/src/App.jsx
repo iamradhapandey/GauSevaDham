@@ -19,7 +19,7 @@ import Video from "./pages/Video"
 import Bhajan from "./pages/Bhajan"
 import { ToastContainer } from "react-toastify"
 import { Navbar } from "./components/Navbar"
-import Footer from "./components/footer"
+import Footer from "./components/Footer"
 
 import LoadingScreen from "./components/Loading"
 import { useEffect, useState } from "react"
