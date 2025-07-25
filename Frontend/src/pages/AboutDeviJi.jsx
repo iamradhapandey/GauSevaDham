@@ -2,7 +2,7 @@ import React from "react"
 import DeviImage1 from "../assets/devi1.jpeg" // Update with actual path
 import DeviImage2 from "../assets/devi2.jpeg" // Update with actual path
 import { motion } from "framer-motion"
-const About_Deviji = () => {
+const AboutDeviji = () => {
   return (
     <div className="bg-white mt-32 text-black">
       <div className="bg-[#fafaf6] py-4 text-center text-black text-lg font-semibold">
@@ -119,4 +119,4 @@ const About_Deviji = () => {
   )
 }
 
-export default About_Deviji
+export default AboutDeviji

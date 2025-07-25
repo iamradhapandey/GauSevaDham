@@ -2,7 +2,7 @@ import bannerImage from "../assets/bannerImage.jpeg" // Update with correct path
 import { motion } from "framer-motion"
 import { useNavigate } from "react-router-dom"
 
-export const About_Trust = () => {
+export const AboutTrust = () => {
   const navigate = useNavigate()
   return (
     <div className="bg-white mt-25 text-black px-4 md:px-20 py-10">
@@ -91,4 +91,4 @@ export const About_Trust = () => {
   )
 }
 
-export default About_Trust
+export default AboutTrust

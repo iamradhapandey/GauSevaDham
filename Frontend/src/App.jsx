@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom"
 import "./App.css"
-import About_DeviJi from "./pages/About_DeviJi"
-import About_Seva from "./pages/About_Seva"
-import About_Trust from "./pages/About_trust"
+import AboutDeviJi from "./pages/AboutDeviJi"
+import AboutSeva from "./pages/AboutSeva"
+import AboutTrust from "./pages/AboutTrust"
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
 import Donate from "./pages/Donate"
@@ -56,9 +56,9 @@ export const App = () => {
         <main className="flex-grow  overflow-x-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route  path="/about/devi-ji" element={<About_DeviJi />} />
-            <Route path="/about/seva" element={<About_Seva />} />
-            <Route path="/about/trust" element={<About_Trust />} />
+            <Route  path="/about/devi-ji" element={<AboutDeviJi />} />
+            <Route path="/about/seva" element={<AboutSeva />} />
+            <Route path="/about/trust" element={<AboutTrust />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/donate" element={<Donate />} />
             

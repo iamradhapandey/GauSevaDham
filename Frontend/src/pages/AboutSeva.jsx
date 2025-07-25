@@ -24,7 +24,7 @@ const sevaSlides = [
   }))
 ]
 
-const About_Seva = () => {
+const AboutSeva = () => {
   const navigate = useNavigate()
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -119,4 +119,4 @@ const About_Seva = () => {
   )
 }
 
-export default About_Seva
+export default AboutSeva
