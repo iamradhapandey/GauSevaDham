@@ -89,7 +89,7 @@ const About_Seva = () => {
         >
           Join your hand with us for a better life and beautiful future.
         </motion.p>
-        <button onClick={()=> navigate('/donation')} className="mt-4 px-6 py-2 text-sm font-bold text-white bg-gradient-to-r from-[#8d1c69] to-[#3c1f2f] rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300 cursor-pointer">
+        <button onClick={()=> navigate('/donate')} className="mt-4 px-6 py-2 text-sm font-bold text-white bg-gradient-to-r from-[#8d1c69] to-[#3c1f2f] rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300 cursor-pointer">
           💠 DONATE NOW
         </button>
       </div>

@@ -41,7 +41,7 @@ export const Hero = () => {
           </AnimatePresence>
         </div>
       </section>
-      <div className="absolute inset-0 w-full h-full flex flex-col justify-center items-center text-white px-4 text-center">
+      <div className="absolute top-30 inset-0 w-full h-full flex flex-col justify-center items-center text-white px-4 text-center">
         <h1 className="text-3xl sm:text-3.5xl md:text-6xl font-bold mb-4 leading-tight">
           Welcome to Our Community
         </h1>
