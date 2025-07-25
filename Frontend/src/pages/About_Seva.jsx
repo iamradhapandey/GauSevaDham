@@ -2,12 +2,26 @@ import React, { useState } from "react"
 import { assets } from "../assets/assets"
 import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
-const sevaImages = [
-  assets.sevaImg1,
-  assets.sevaImg2,
-  assets.sevaImg3,
-  assets.sevaImg4,
-  assets.sevaImg5,
+
+const sevaSlides = [
+  {
+    type: "video",
+    content: (
+      <iframe
+        className="w-full h-full rounded-xl"
+        src="https://www.youtube.com/embed/vZqTv905-Ls"
+        title="Gau Seva | Devi Chitralekha Ji | G.S.D Animal Hospital"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+    )
+  },
+  ...[assets.sevaImg1, assets.sevaImg2, assets.sevaImg3, assets.sevaImg4, assets.sevaImg5].map((img) => ({
+    type: "image",
+    content: <img src={img} alt="Seva" className="w-full h-full object-cover rounded-xl" />
+  }))
 ]
 
 const About_Seva = () => {
@@ -15,24 +29,27 @@ const About_Seva = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? sevaImages.length - 1 : prev - 1))
+    setCurrentIndex((prev) => (prev === 0 ? sevaSlides.length - 1 : prev - 1))
   }
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === sevaImages.length - 1 ? 0 : prev + 1))
+    setCurrentIndex((prev) => (prev === sevaSlides.length - 1 ? 0 : prev + 1))
   }
 
   return (
-    <div className="w-full mt-30 ">
-      {/* Slider */}
-      <div className="relative w-full h-[60vh]  sm:h-[75vh] overflow-hidden">
-        <img
-          src={sevaImages[currentIndex]}
-          alt={`Seva image ${currentIndex + 1}`}
-          className="w-screen h-screen object-cover transition-all duration-500"
-        />
+    <div className="w-full mt-24">
+      {/* Swiper Section */}
+      <div className="relative w-full h-[60vh] sm:h-[75vh] overflow-hidden mb-10 rounded-xl">
+        <motion.div
+          key={currentIndex}
+          className="w-full h-full absolute inset-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          {sevaSlides[currentIndex].content}
+        </motion.div>
 
-        {/* Arrows */}
         <button
           onClick={prevSlide}
           className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hover:bg-opacity-80"
@@ -47,12 +64,12 @@ const About_Seva = () => {
         </button>
       </div>
 
-      {/* General Description */}
+      {/* 📜 Seva Description */}
       <div className="bg-white py-10 px-5 sm:px-16 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
           Seva Activities
         </h2>
-        <p className="text-gray-600 text-base sm:text-lg leading-relaxed space-y-4">
+        <p className="text-gray-600 text-base sm:text-lg leading-relaxed space-y-4 text-justify">
           <span className="block mb-4">
             Gau Seva Dham is a divine center established under the pious guidance of Devi Chitralekha Ji,
             committed to the service and protection of Gau Mata (holy cows). This sacred place is not just a shelter,
@@ -79,26 +96,27 @@ const About_Seva = () => {
             love, and dharma across the nation and beyond.
           </span>
         </p>
-        {/* Footer Banner */}
-      <div className="bg-gray-500 text-white text-center py-4 mt-12">
-        <motion.p
-          className="font-semibold text-sm md:text-base"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          Join your hand with us for a better life and beautiful future.
-        </motion.p>
-        <button onClick={()=> navigate('/donate')} className="mt-4 px-6 py-2 text-sm font-bold text-white bg-gradient-to-r from-[#8d1c69] to-[#3c1f2f] rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300 cursor-pointer">
-          💠 DONATE NOW
-        </button>
+
+        {/* ❤️ CTA Donate Banner */}
+        <div className="bg-[#3c1f2f] text-white text-center py-6 mt-12 rounded-xl shadow-lg">
+          <motion.p
+            className="font-semibold text-sm md:text-base"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            Join your hand with us for a better life and beautiful future.
+          </motion.p>
+          <button
+            onClick={() => navigate("/donate")}
+            className="mt-4 px-6 py-2 text-sm font-bold text-white bg-gradient-to-r from-[#8d1c69] to-[#d81b60] rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300 cursor-pointer"
+          >
+            💠 DONATE NOW
+          </button>
+        </div>
       </div>
     </div>
-  
-      </div>
-    
   )
 }
-
 
 export default About_Seva

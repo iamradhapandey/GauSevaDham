@@ -67,7 +67,19 @@ const Gallery = () => {
       id: "11",
       img: "https://www.worldsankirtan.org/admin/files/1461633101.jpg",
       url: "https://example.com/three",
-      height: 200,
+      height: 400,
+    },
+    {
+      id: "12",
+      img: "https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2025/02/chitralekhaji_474133634_4012444639002167_7739575252445376644_nITG-1739768229246.jpg?size=*:900",
+      url: "https://example.com/three",
+      height: 500,
+    },
+    {
+      id: "13",
+      img: "https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2025/02/chitralekhaji_474133634_4012444639002167_7739575252445376644_nITG-1739768229246.jpg?size=*:900",
+      url: "https://example.com/three",
+      height: 500,
     },
   ]);
 

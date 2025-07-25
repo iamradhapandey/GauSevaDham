@@ -12,10 +12,10 @@ import devi1 from "./devi1.jpeg"
 import devi2 from "./devi2.jpeg"
 import bannerImage from "./bannerImage.jpeg" // Update with correct path
 import sevaImg1 from "./sevaImg1.jpg"
-import sevaImg2 from "./sevaImg2.jpeg"
-import sevaImg3 from "./sevaImg3.jpeg"
+import sevaImg2 from "./sevaImg2.jpg"
+import sevaImg3 from "./sevaImg3.jpg"
 import sevaImg4 from "./sevaImg4.jpg"
-import sevaImg5 from "./sevaImg5.jpeg"
+
 import mainImg from "./mainImg.jpeg"
 import Donation from "./Donation.jpg"
 import Donation2 from "./Donation2.jpg"
@@ -38,7 +38,7 @@ export const assets = {
   sevaImg2,
   sevaImg3,
   sevaImg4,
-  sevaImg5,
+ 
   mainImg,
   Donation,
   Donation2,
