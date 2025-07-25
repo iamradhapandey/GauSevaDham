@@ -1,6 +1,6 @@
 import React from "react"
 
-export const welcome = () => {
+export const Welcome = () => {
   return (
     <div className="flex flex-row justify-between py-20 space-y-6 bg-white">
       {/** Left Side */}
@@ -25,4 +25,4 @@ export const welcome = () => {
     </div>
   )
 }
-export default welcome
+export default Welcome
