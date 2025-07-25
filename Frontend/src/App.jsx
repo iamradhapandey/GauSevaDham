@@ -7,6 +7,7 @@ import Home from "./pages/Home"
 import Contact from "./pages/Contact"
 import Donate from "./pages/Donate"
 import Events from "./pages/Events"
+import EventDetail from "./pages/EventDetail"
 import Gallery from "./pages/Gallery"
 import Blog from "./pages/Blog"
 import BlogDetail from "./pages/BlogDetail"
@@ -60,7 +61,9 @@ export const App = () => {
             <Route path="/about/trust" element={<About_Trust />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/donate" element={<Donate />} />
+            
             <Route path="/events" element={<Events />} />
+            <Route path="/events/:id" element={<EventDetail />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogDetail />} />

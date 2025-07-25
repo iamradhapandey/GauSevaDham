@@ -140,7 +140,7 @@ const Programs = () => {
   const navigate = useNavigate();
 
   const handleImageClick = (slug) => {
-    navigate(`/events/${slug}`);
+    navigate(`/events`);
   };
 
   const handleJoinNow = () => {
