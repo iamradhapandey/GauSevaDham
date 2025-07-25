@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
         const navigate = useNavigate();
 
   return (
-    <section className="bg-white text-[#4b2c34] px-6 py-12 md:px-16 md:py-20">
+    <section className="bg-[#fdf0f5] text-[#4b2c34] px-6 py-12 md:px-16 md:py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* Left Section */}
         <div>

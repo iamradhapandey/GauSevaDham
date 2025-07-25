@@ -4,7 +4,7 @@ import DeviImage2 from "../assets/devi2.jpeg" // Update with actual path
 import { motion } from "framer-motion"
 const About_Deviji = () => {
   return (
-    <div className="bg-white text-black">
+    <div className="bg-white mt-32 text-black">
       <div className="bg-[#fafaf6] py-4 text-center text-black text-lg font-semibold">
         About Devi Chitralekha Ji
       </div>

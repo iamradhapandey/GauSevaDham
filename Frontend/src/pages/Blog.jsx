@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Blog = () => {
   return (
-    <section className="px-6 py-12 bg-[#fefcf9]">
+    <section className="px-6 py-12 mt-20 bg-[#fefcf9]">
       <div className="max-w-6xl mx-auto text-center">
         {/* Animated Heading */}
         <motion.h1

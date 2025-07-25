@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 export const About_Trust = () => {
   const navigate = useNavigate()
   return (
-    <div className="bg-white text-black px-4 md:px-20 py-10">
+    <div className="bg-white mt-25 text-black px-4 md:px-20 py-10">
       <h1 className="text-center text-2xl md:text-3xl font-bold mb-2">
         About World Sankirtan Trust
       </h1>

@@ -23,13 +23,13 @@ const About_Seva = () => {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-30 ">
       {/* Slider */}
-      <div className="relative w-full h-[60vh] sm:h-[75vh] overflow-hidden">
+      <div className="relative w-full h-[60vh]  sm:h-[75vh] overflow-hidden">
         <img
           src={sevaImages[currentIndex]}
           alt={`Seva image ${currentIndex + 1}`}
-          className="w-full h-full object-cover transition-all duration-500"
+          className="w-screen h-screen object-cover transition-all duration-500"
         />
 
         {/* Arrows */}

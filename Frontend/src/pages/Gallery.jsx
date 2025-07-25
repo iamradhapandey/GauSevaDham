@@ -72,7 +72,7 @@ const Gallery = () => {
   ]);
 
   return (
-    <div className="w-full min-h-screen bg-white px-4 py-10">
+    <div className="w-full mt-25 min-h-screen bg-white px-4 py-10">
       <div className="max-w-6xl mx-auto">
         <Masonry
           items={items}

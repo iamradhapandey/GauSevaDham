@@ -2,7 +2,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaYout
 
 const ContactUs = () => {
   return (
-    <section className="w-full bg-gray-100 py-12 px-4 sm:px-6 lg:px-12">
+    <section className="w-full mt-25 bg-gray-100 py-12 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden">
         
         {/* Left: Image */}

@@ -410,3 +410,92 @@ At Gau Seva Dham, this divine principle is not just read—it is lived.
       }
   ];
   
+ 
+
+  export const events = [
+    {
+      id: 1,
+      title: 'Shrimad Bhagwat Katha - USA',
+      date: '18 July 2025 - 04 August 2025',
+      location: 'USA',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/1188201291.jpg',
+    },
+    {
+      id: 2,
+      title: 'Shrimad Bhagwat Katha - Darbhanga, Bihar',
+      date: '07 September 2025, 3:00 PM - 13 September 2025, 6:00 PM',
+      location: 'Darbhanga, Bihar',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/1356214297.jpg',
+    },
+    {
+      id: 3,
+      title: 'Shrimad Bhagwat Katha - Raichur, Karnataka',
+      date: '02 October 2025, 3:00 PM - 08 October 2025, 6:00 PM',
+      location: 'Raichur, Karnataka',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/1908702471.jpg',
+    },
+    {
+      id: 4,
+      title: 'Shrimad Bhagwat Katha - Vrindavan Dham',
+      date: '25 October 2025, 3:00 PM - 31 October 2025, 6:00 PM',
+      location: 'Vrindavan Dham',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/1805998286.jpg',
+    },
+    {
+      id: 5,
+      title: 'Shrimad Bhagwat Katha - Shela, Gujarat',
+      date: '17 December 2025, 3:00 PM - 23 December 2025, 6:00 PM',
+      location: 'Agrasen Foundation, Club 07, Shela, Gujarat',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/805638211.jpeg',
+    },
+    {
+      id: 6,
+      title: 'Shrimad Bhagwat Katha - Kandivali, Mumbai',
+      date: '04 January 2026, 3:00 PM - 10 January 2026, 6:00 PM',
+      location: 'Kandivali, Mumbai',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/1861673460.jpg',
+    },
+    {
+      id: 7,
+      title: 'Shrimad Bhagwat Katha - Paonta Sahib, HP',
+      date: '15 January 2026, 12:00 PM - 21 January 2026, 3:00 AM',
+      location: 'Nagar Palika Khel Maidan, Paonta Sahib, Himachal Pradesh',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/1861673460.jpg',
+    },
+    {
+      id: 8,
+      title: 'Shrimad Bhagwat Katha - Ranchi, Jharkhand',
+      date: '29 January 2026, 3:00 PM - 04 February 2026, 6:00 PM',
+      location: 'Holiday Home, Kanke Road, Ranchi, Jharkhand',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/392884699.jpg',
+    },
+    {
+      id: 9,
+      title: 'Shrimad Bhagwat Katha - Patiala, Punjab',
+      date: '24 February 2026, 3:00 PM - 02 March 2026, 6:30 PM',
+      location: 'Patanda, Patiala, Punjab',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/1000265149.jpg',
+    },
+    {
+      id: 10,
+      title: 'Shrimad Bhagwat Katha - Ayodhya Dham',
+      date: '10 March 2026, 2:00 PM - 17 March 2026, 6:00 PM',
+      location: 'Ram Mandir Complex, Ayodhya, UP',
+      imageUrl: 'https://www.worldsankirtan.org/admin/files/34974388.jpg',
+    },
+    {
+      id: 11,
+      title: 'Shrimad Bhagwat Katha - Indore, MP',
+      date: '01 April 2026, 3:00 PM - 07 April 2026, 6:00 PM',
+      location: 'Pipliyapala Grounds, Indore, Madhya Pradesh',
+      imageUrl: 'https://i.ytimg.com/vi/KzjHrgD7Q3A/sddefault.jpg',
+    },
+    {
+      id: 12,
+      title: 'Shrimad Bhagwat Katha - Haridwar, Uttarakhand',
+      date: '14 April 2026, 3:00 PM - 20 April 2026, 6:00 PM',
+      location: 'Har Ki Pauri, Haridwar, Uttarakhand',
+      imageUrl: 'https://i.ytimg.com/vi/lnjo23_kVYA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBqMOtGGgt9BswcA43CgbdCElbD0Q',
+    },
+  ];
+  

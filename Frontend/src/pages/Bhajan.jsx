@@ -15,7 +15,7 @@ const Bhajan = () => {
       : bhajanData.filter(b => b.category === selectedCategory);
 
   return (
-    <div className="p-10">
+    <div className="p-10 mt-25">
       <h1 className="text-4xl font-bold text-center text-[#3c1f2f] mb-10">
         🎶 Bhajans by Devi Ji
       </h1>

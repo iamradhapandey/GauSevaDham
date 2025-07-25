@@ -8,7 +8,7 @@ const BlogDetail = () => {
 
   if (!post) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center text-center p-6">
+      <div className=" min-h-screen flex flex-col items-center justify-center text-center p-6">
         <h2 className="text-2xl text-red-600 font-semibold mb-4">404 – Blog not found</h2>
         <Link to="/blog" className="text-indigo-600 underline hover:text-indigo-800">
           ← Go Back to Blog
@@ -18,8 +18,8 @@ const BlogDetail = () => {
   }
 
   return (
-    <motion.div
-      className="max-w-3xl mx-auto p-6 mt-10 bg-white rounded-lg shadow-lg"
+    <motion.div 
+      className="max-w-3xl  mx-auto p-6 mt-32 bg-white rounded-lg shadow-lg"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}

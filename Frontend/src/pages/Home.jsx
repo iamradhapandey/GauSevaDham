@@ -10,9 +10,9 @@ import Footer from "../components/footer"
 
 const Home = () => {
   return (
-    <div>
+    <div className="mt-15">
       <Hero />
-      <Welcome />
+      {/* <Welcome /> */}
       <Card />
       <Program />
       {/* <Poster /> */}
