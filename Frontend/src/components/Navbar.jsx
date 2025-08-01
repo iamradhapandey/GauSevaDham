@@ -55,7 +55,7 @@ export const Navbar = () => {
             <div
               className={`${
                 isMobile ? "relative mt-2" : "absolute top-full left-0"
-              } bg-[#6e4053] text-white rounded-md shadow-lg transition-all duration-300 z-50 min-w-[160px] ${
+              } bg-[#6e4053] text-white rounded-md shadow-lg transition-all duration-300  min-w-[160px] ${
                 dropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
               }`}
             >
@@ -155,7 +155,7 @@ export const Navbar = () => {
   return (
     <>
       <motion.div
-        className="h-1 bg-yellow-400 fixed top-0 left-0 z-[9999]"
+        className="h-1 bg-yellow-400 fixed top-0 left-0 "
         style={{ width: `${scrollProgress}%` }}
       />
 
@@ -163,7 +163,7 @@ export const Navbar = () => {
         initial={{ y: -80 }}
         animate={{ y: isVisible ? 0 : -100 }}
         transition={{ duration: 0.4 }}
-        className="bg-[#171725] text-white fixed top-0 left-0 w-full z-50 shadow-lg"
+        className="bg-[#171725] text-white top-0 left-0 w-full shadow-lg"
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-5 py-3 lg:px-10">
           <button onClick={handleMobileNav} className="sm:hidden">
@@ -192,7 +192,7 @@ export const Navbar = () => {
       </motion.header>
 
       {/* Floating Donate & WhatsApp Buttons */}
-      <div className="fixed right-4 bottom-4 flex flex-col gap-3 z-[9999]">
+      <div className="fixed right-4 bottom-4 flex flex-col gap-3 ">
         <a
           href="/donate"
           className="bg-yellow-400 text-black font-bold px-4 py-2 rounded-full shadow-md hover:bg-yellow-300"

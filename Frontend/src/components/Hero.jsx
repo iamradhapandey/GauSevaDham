@@ -25,7 +25,7 @@ export const Hero = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-black">
       {/* Background Slideshow */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 ">
         {/* Previous image stays while new one fades in */}
         {prevImage !== null && (
           <img
@@ -45,11 +45,11 @@ export const Hero = () => {
           className="w-full h-full object-cover absolute top-0 left-0"
         />
 
-        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="absolute inset-0 bg-black/50 " />
       </div>
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
+      <div className="relative  flex flex-col items-center justify-center h-full text-white text-center px-4">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
