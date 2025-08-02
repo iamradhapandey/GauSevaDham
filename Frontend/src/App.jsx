@@ -12,7 +12,7 @@ import Gallery from "./pages/Gallery"
 import Blog from "./pages/Blog"
 import BlogDetail from "./pages/BlogDetail"
 import Volunteer from "./pages/Volunteer"
-import PrivacyPolicies from "./pages/PrivacyPolicies"
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms"
 import NotFound from "./pages/NotFound"
 import Video from "./pages/Video"
@@ -68,7 +68,7 @@ export const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="/volunteer" element={<Volunteer />} />
-            <Route path="/privacypolicies" element={<PrivacyPolicies />} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/video" element={<Video />} />
 
