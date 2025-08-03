@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-black">
         <img
-          src="https://www.jkpliterature.org.in/cdn/shop/files/bhagwan-naam-mahatmya-english-1.jpg?v=1713532447"
+          src="https://c1.wallpaperflare.com/preview/63/56/992/idol-india-lord-krishna-religion-thumbnail.jpg"
           alt="Hero Banner"
           className="absolute inset-0 w-full h-full object-cover object-center opacity-90"
         />
