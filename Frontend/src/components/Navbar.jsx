@@ -82,9 +82,16 @@ const Navbar = () => {
       <nav className="w-full">
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between py-3">
           {/* Logo */}
-          <NavLink to="/" className="text-2xl font-bold text-purple-700">
-            Gau Seva Dham
-          </NavLink>
+          <NavLink to="/" className="flex items-center gap-2 text-2xl font-bold text-purple-700">
+  {/* Logo Image */}
+  <img
+    src="/src/assets/logo.png"   // relative to Vite public or src folder
+    alt="Gau Seva Dham Logo"
+    className="w-10 h-10 object-contain" // width & height + maintain aspect ratio
+  />
+  {/* Logo Text */}
+ <h1 className="text-2xl text-black font-semibold"> Gau Seva Dham</h1>
+</NavLink>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
