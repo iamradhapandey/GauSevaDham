@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import logo from '../assets/logo.png'; // Update path as per your structure
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -85,8 +86,7 @@ const Navbar = () => {
           <NavLink to="/" className="flex items-center gap-2 text-2xl font-bold text-purple-700">
   {/* Logo Image */}
   <img
-    src="/src/assets/logo.png"   // relative to Vite public or src folder
-    alt="Gau Seva Dham Logo"
+    src={logo} alt="WST Logo"
     className="w-10 h-10 object-contain" // width & height + maintain aspect ratio
   />
   {/* Logo Text */}
