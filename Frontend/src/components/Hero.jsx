@@ -23,9 +23,9 @@ export const Hero = () => {
   }, [currentImage]);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black">
+    <section className="relative min-h-[calc(100vh-64px)] pt-80 bg-[#171725]">
       {/* Background Slideshow */}
-      <div className="absolute inset-0 ">
+      <div className="absolute inset-0  ">
         {/* Previous image stays while new one fades in */}
         {prevImage !== null && (
           <img
@@ -54,7 +54,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1 }}
-          className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg"
+          className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg mt-0"
         >
           Experience Divine Grace with Devi Chitralekha Ji
         </motion.h1>

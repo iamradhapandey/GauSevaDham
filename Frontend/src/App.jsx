@@ -20,7 +20,7 @@ import Bhajan from "./pages/Bhajan"
 import { ToastContainer } from "react-toastify"
 import { Navbar } from "./components/Navbar"
 import Footer from "./components/Footer"
-
+import SmoothScroll from "./components/SmoothScroll"
 import LoadingScreen from "./components/Loading"
 import { useEffect, useState } from "react"
 import ScrollToTop from "./components/ScrollToTop"
@@ -54,6 +54,9 @@ export const App = () => {
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow  overflow-x-hidden">
+          <SmoothScroll>
+
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route  path="/about/devi-ji" element={<AboutDeviJi />} />
@@ -77,6 +80,7 @@ export const App = () => {
 
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </SmoothScroll>
         </main>
         <Footer />
       </div>

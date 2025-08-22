@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Events = () => {
   return (
     <Fade cascade damping={0.1} triggerOnce>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 p-20">
         {events.map((e) => (
           <Zoom triggerOnce key={e.id}>
             <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">

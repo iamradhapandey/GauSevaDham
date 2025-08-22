@@ -163,7 +163,7 @@ export const Navbar = () => {
         initial={{ y: -80 }}
         animate={{ y: isVisible ? 0 : -100 }}
         transition={{ duration: 0.4 }}
-        className="bg-[#171725] text-white top-0 left-0 w-full shadow-lg"
+        className="fixed top-0 left-0 w-full z-60 bg-[#171725] text-white shadow-lg"
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-5 py-3 lg:px-10">
           <button onClick={handleMobileNav} className="sm:hidden">
