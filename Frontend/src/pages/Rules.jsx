@@ -14,7 +14,7 @@ const stagger = {
   },
 };
 
-const PrivacyPolicy = () => {
+const  Rules = () => {
   return (
     <div className="text-gray-800 font-sans">
       {/* Hero Section */}
@@ -135,4 +135,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default Rules;

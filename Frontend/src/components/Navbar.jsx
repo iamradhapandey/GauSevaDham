@@ -24,7 +24,7 @@ const Navbar = () => {
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
     { name: "Donate", path: "/donate" },
-    { name: "Privacy Policy", path: "/privacypolicy" },
+    // { name: "Rules", path: "/Rules" },
   ];
 
   return (
